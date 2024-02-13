@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #e5e5e5;
+  font-size: 1.6rem;
+  font-family: "Crimson Text", serif;
+}
+
+button {
+  background: none;
+  font-family: "Crimson Text", serif;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.item {
+  display: grid;
+  gap: 3rem;
+}
+.item:hover {
+  cursor: pointer;
+}
+.item:hover .item-pic {
+  transition: all 0.7s;
+  transform: scale(1.1);
+}
+
+.item-pic {
+  height: 37.5rem;
+  background-repeat: no-repeat;
+}
+
+.item-name {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+.price,
+.product {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+.price {
+  color: #515151;
+}
+
+.scroll-in {
+  transition: all 1s;
+}
+
+.hidden-stn {
+  opacity: 0;
+  transform: translateY(8rem);
+  scale: 0.8;
+}
+
+header .container {
+  display: grid;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(229, 229, 229, 0.8549019608);
+}
+header .container nav .ends {
+  display: flex;
+  gap: 5.6rem;
+}
+header .container nav .ends button {
+  text-transform: uppercase;
+  color: #939393;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+header .container nav .ends button:hover {
+  color: #504f4f;
+}
+header .container nav .ends .current {
+  color: black;
+}
+header .container nav .logo {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  transition: all 0.3s;
+}
+header .container .hero {
+  width: 100%;
+  height: 80vh;
+  font-size: 6rem;
+  line-height: 7.8rem;
+  color: #ffffff;
+  display: grid;
+  place-content: center;
+  background: url(/src/images/hero.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 7.3rem 12.3rem;
+}
+
+.headd {
+  padding: 6.3rem 0 7.5rem;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: #000000;
+  text-align: center;
+}
+
+.collection-stn .container {
+  display: grid;
+}
+.collection-stn .container .sort {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #999696;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #817b7b;
+  margin-bottom: 4rem;
+}
+.collection-stn .container .sort select {
+  font-family: "Crimson Text", serif;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #817b7b;
+  background: none;
+}
+.collection-stn .container .collections-container {
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 0 6.3rem;
+}
+
+.navigate {
+  background: #464646;
+}
+.navigate .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.7rem;
+  padding: 2.3rem 0 3.6rem;
+}
+.navigate button {
+  font-family: "Crimson Text";
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: #888888;
+  background: none;
+}
+.navigate .pages {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #888888;
+  display: flex;
+  gap: 1rem;
+}
+.navigate .pages .current {
+  color: #ffffff;
+}
+
+footer {
+  background: #0d0d0d;
+  padding: 5.4rem 0 10rem;
+}
+footer .container {
+  display: grid;
+  gap: 3.7rem;
+}
+footer .container .foot {
+  display: flex;
+  justify-content: space-between;
+  color: #6b6969;
+}
+footer .container .foot h4 {
+  margin-bottom: 2.3rem;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #dfdddd;
+}
+footer .container .foot li {
+  margin-bottom: 1.3rem;
+}
+footer .container .foot button {
+  color: #e9e5e5;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+footer .container .top-side {
+  padding-bottom: 2.7rem;
+}
+footer .container hr {
+  width: 100%;
+  height: 0.1rem;
+  border: 1px solid #515151;
+}
+footer .container .bottom-side .subscribe {
+  display: grid;
+  width: 40rem;
+}
+footer .container .bottom-side .subscribe form {
+  background: none;
+  border: none;
+  display: grid;
+  grid-template-columns: 1.7fr 0.2fr;
+  gap: 0.5rem;
+}
+footer .container .bottom-side .subscribe form .email {
+  background: none;
+  font-family: "Crimson Text", serif;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #504f4f;
+  color: #fff;
+}
+footer .container .bottom-side .subscribe form button {
+  background: none;
+  align-self: flex-end;
+}
+footer .container .bottom-side .subscribe form button span {
+  font-size: 3.2rem;
+  color: #5f5d5d;
+}
+footer .container .bottom-side .shipping select {
+  background: none;
+  font-family: "Crimson Text", serif;
+  color: #f2f2f2;
+  font-size: 1.8rem;
+}
+footer .container .bottom-side .shipping select option {
+  background-color: #504f4f;
+}
